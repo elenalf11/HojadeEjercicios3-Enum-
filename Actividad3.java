@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Actividad3 {
 
     public enum Mes {ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE}
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("-------------------");
         System.out.println("[1] " + Mes.ENERO);
@@ -20,7 +21,7 @@ public class Actividad3 {
         System.out.println("[10] " + Mes.OCTUBRE);
         System.out.println("[11] " + Mes.NOVIEMBRE);
         System.out.println("[12] " + Mes.DICIEMBRE);
-        System.out.print("Dime un número de los que te acabo de decir, y te diré los días que tiene ese mes: ");
+        System.out.print("Dime un número  te diré los días que tiene ese mes: ");
         int num = sc.nextInt();
         sc.close();
 
@@ -73,7 +74,7 @@ public class Actividad3 {
                 System.out.println(Mes.DICIEMBRE + " tiene 31 días");
                 break;
             default:
-            System.out.println("Número inválido");
+                System.out.println("El número que has dicho no está en el intervalo del principio vuelve a decir otro");
                 break;
         }
     }
